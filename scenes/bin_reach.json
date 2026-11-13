@@ -1,0 +1,707 @@
+{
+ "env": "lin_review_20261105_a",
+ "bin_deltas": {
+  "bin_red_m": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bin_blue_m": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bin_yellow_m": [
+   -0.010492,
+   -0.141757,
+   0.0
+  ]
+ },
+ "basket_delta": [
+  -0.010092,
+  -0.112
+ ],
+ "rows": [
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    -0.177
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    -0.177
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    -0.177
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    -0.177
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    -0.177
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    -0.177
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    -0.177
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    -0.177
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    -0.177
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    -0.177
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.303
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.303
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.303
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.303
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.303
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.103
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.103
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.103
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.103
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.103
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    -0.177
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    -0.177
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    -0.177
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    -0.177
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    -0.177
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.283
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.283
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.283
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.283
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.283
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.063
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.063
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.063
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.063
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.231,
+    0.063
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.063
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.063
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.063
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.063
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.751,
+    0.063
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.063
+   ],
+   "goal": "centre",
+   "goal_xy": [
+    -0.4588,
+    -0.1328
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.063
+   ],
+   "goal": "corner --",
+   "goal_xy": [
+    -0.5938,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.063
+   ],
+   "goal": "corner -+",
+   "goal_xy": [
+    -0.5938,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.063
+   ],
+   "goal": "corner +-",
+   "goal_xy": [
+    -0.3238,
+    -0.2678
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "cell": [
+    0.491,
+    0.063
+   ],
+   "goal": "corner ++",
+   "goal_xy": [
+    -0.3238,
+    0.0022
+   ],
+   "ok": true,
+   "dir_deg": 0
+  },
+  {
+   "bin": "yellow",
+   "look_bin": [
+    -0.5187919999999999,
+    -0.132757,
+    0.8198000000000001
+   ],
+   "ok": true
+  },
+  {
+   "bin": "yellow",
+   "look_bin": [
+    -0.398792,
+    -0.132757,
+    0.8198000000000001
+   ],
+   "ok": true
+  }
+ ],
+ "release_clearance": {
+  "red": {
+   "min_m": 0.0043,
+   "at": {
+    "release_above_m": 0.085,
+    "dir_deg": 0,
+    "spot": [
+     0.0712,
+     -0.2724
+    ]
+   }
+  },
+  "blue": {
+   "min_m": 0.0043,
+   "at": {
+    "release_above_m": 0.085,
+    "dir_deg": 0,
+    "spot": [
+     0.0712,
+     0.0476
+    ]
+   }
+  },
+  "yellow": {
+   "min_m": 0.4304,
+   "at": "far: inner box >= 10 cm from the basket walls, not searched"
+  }
+ },
+ "ok": true,
+ "failed": [],
+ "moved": [
+  "yellow"
+ ]
+}

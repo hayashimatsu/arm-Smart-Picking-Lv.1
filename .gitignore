@@ -1,0 +1,10 @@
+# project-smart-picking-arm-2 (2026-11-07): run outputs and environments are not tracked; instruction files are.
+outputs/
+.venv*/
+perception/.venv/
+__pycache__/
+*.pyc
+
+# 2026-11-08 管理者補充：工作副本不進版本，log 不進版本
+scenes/lab_cell_g1_work.usda
+*.log

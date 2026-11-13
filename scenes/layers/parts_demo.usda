@@ -1,0 +1,90 @@
+#usda 1.0
+(
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def "World"
+{
+    over "object" (
+        active = false
+    )
+    {
+    }
+
+    def Xform "Parts"
+    {
+        def "flange_round_galvanized" (
+            prepend references = @../../parts/usd/flange_round.usd@
+            variants = {
+                string finish = "galvanized"
+            }
+        )
+        {
+            float xformOp:rotateZ = 0
+            double3 xformOp:translate = (-0.7, -0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "flange_round_black" (
+            prepend references = @../../parts/usd/flange_round.usd@
+            variants = {
+                string finish = "black"
+            }
+        )
+        {
+            float xformOp:rotateZ = 0
+            double3 xformOp:translate = (-0.7, 0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "bracket_mid_galvanized" (
+            prepend references = @../../parts/usd/bracket_mid.usd@
+            variants = {
+                string finish = "galvanized"
+            }
+        )
+        {
+            float xformOp:rotateZ = 20
+            double3 xformOp:translate = (-0.52, -0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "bracket_mid_black" (
+            prepend references = @../../parts/usd/bracket_mid.usd@
+            variants = {
+                string finish = "black"
+            }
+        )
+        {
+            float xformOp:rotateZ = 20
+            double3 xformOp:translate = (-0.52, 0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "bracket_end_galvanized" (
+            prepend references = @../../parts/usd/bracket_end.usd@
+            variants = {
+                string finish = "galvanized"
+            }
+        )
+        {
+            float xformOp:rotateZ = 40
+            double3 xformOp:translate = (-0.33, -0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+
+        def "bracket_end_black" (
+            prepend references = @../../parts/usd/bracket_end.usd@
+            variants = {
+                string finish = "black"
+            }
+        )
+        {
+            float xformOp:rotateZ = 40
+            double3 xformOp:translate = (-0.33, 0.09, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZ"]
+        }
+    }
+}
+

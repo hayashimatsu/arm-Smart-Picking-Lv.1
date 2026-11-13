@@ -1,0 +1,635 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (5.000000111758711, 0, 0)
+                double radius = 3.3850807189941405
+            }
+            dictionary Perspective = {
+                double3 position = (-0.08768638652539112, 3.382699706054713, 1.8406497899291756)
+                double3 target = (-0.016012091491670724, -0.6622775043475979, 0.43215706733031634)
+            }
+            dictionary Right = {
+                double3 position = (0.16187050359712246, -5.000000111758711, 0.8992805755395694)
+                double radius = 4.074460220336914
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 5.000000111758711)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        string lab_cell = "{\"layout\": \"C_compact\", \"bins\": {\"flange_round\": {\"colour\": \"red\", \"centre\": [-0.0483, -0.191], \"inner_xy\": [[-0.2283, 0.13169999999999998], [-0.371, -0.01100000000000001]], \"floor_z\": 0.6052, \"rim_z\": 0.6951999999999999}, \"bracket_mid\": {\"colour\": \"blue\", \"centre\": [-0.0483, 0.209], \"inner_xy\": [[-0.2283, 0.13169999999999998], [0.028999999999999998, 0.389]], \"floor_z\": 0.6052, \"rim_z\": 0.6951999999999999}, \"bracket_end\": {\"colour\": \"yellow\", \"centre\": [-0.4483, 0.009], \"inner_xy\": [[-0.6283, -0.2683], [-0.17099999999999999, 0.189]], \"floor_z\": 0.6052, \"rim_z\": 0.6951999999999999}}, \"bin_size\": {\"inner\": 0.36, \"height\": 0.1, \"wall\": 0.01}, \"light\": {\"type\": \"RectLight\", \"path\": \"/World/LabCellLight\", \"width_m\": 2.0, \"height_m\": 2.0, \"translate\": [0.15, 0.1, 2.2], \"intensity\": 3000.0, \"facing\": \"down (-z, the default of a RectLight)\", \"other_lights\": \"the main scene's lights unchanged\"}, \"cell_plan\": \"../../../../../mnt/data/Lin(sda)/project-smart-picking/result/lab/20261026-1701_G1G2_basket_loop/g1v2/cell_plan.json\"}"
+        dictionary omni_layer = {
+            string authoring_layer = "./lab_cell_g1.usda"
+        }
+        dictionary renderSettings = {
+        }
+    }
+    defaultPrim = "World"
+    endTimeCode = 1000000
+    framesPerSecond = 60
+    metersPerUnit = 1
+    startTimeCode = 0
+    subLayers = [
+        @./nhc-d455-ik.usd@
+    ]
+    timeCodesPerSecond = 60
+    upAxis = "Z"
+)
+
+over "World"
+{
+    over "Parts"
+    {
+        over "flange_round_galvanized" (
+            active = false
+        )
+        {
+        }
+
+        over "flange_round_black" (
+            active = false
+        )
+        {
+        }
+
+        over "bracket_mid_galvanized" (
+            active = false
+        )
+        {
+        }
+
+        over "bracket_mid_black" (
+            active = false
+        )
+        {
+        }
+
+        over "bracket_end_galvanized" (
+            active = false
+        )
+        {
+        }
+
+        over "bracket_end_black" (
+            active = false
+        )
+        {
+        }
+    }
+
+    over "container_h20"
+    {
+        over "container_h20_inst"
+        {
+            matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (-0.009174414282934973, -0.0700000000000014, 0, 1) )
+            uniform token[] xformOpOrder = ["xformOp:transform"]
+
+            over "colliders"
+            {
+                over "Cube" (
+                    active = false
+                )
+                {
+                }
+
+                over "Cube_01" (
+                    active = false
+                )
+                {
+                }
+
+                over "Cube_02" (
+                    active = false
+                )
+                {
+                }
+
+                over "Cube_03" (
+                    active = false
+                )
+                {
+                }
+
+                over "Cube_04" (
+                    active = false
+                )
+                {
+                }
+            }
+
+            def Xform "BasketColliders"
+            {
+                def Cube "floor" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    uniform token purpose = "guide"
+                    double size = 1
+                    token visibility = "invisible"
+                    double3 xformOp:scale = (0.6150908957591731, 0.4149999938160182, 0.005437499918974963)
+                    double3 xformOp:translate = (0, -0.000011785322238640297, 0.003193081331356249)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "wall_xn" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    uniform token purpose = "guide"
+                    double size = 1
+                    token visibility = "invisible"
+                    double3 xformOp:scale = (0.017545454165167052, 0.4149999938160182, 0.08949999866634609)
+                    double3 xformOp:translate = (-0.29877272079700296, -0.000011785322238640297, 0.045224330705041844)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "wall_xp" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    uniform token purpose = "guide"
+                    double size = 1
+                    token visibility = "invisible"
+                    double3 xformOp:scale = (0.017545454165167153, 0.4149999938160182, 0.08949999866634609)
+                    double3 xformOp:translate = (0.29877272079700296, -0.000011785322238640297, 0.045224330705041844)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "wall_yn" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    uniform token purpose = "guide"
+                    double size = 1
+                    token visibility = "invisible"
+                    double3 xformOp:scale = (0.6150908957591731, 0.01749999973922968, 0.08949999866634609)
+                    double3 xformOp:translate = (0, -0.1987617823606329, 0.045224330705041844)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "wall_yp" (
+                    prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    uniform token purpose = "guide"
+                    double size = 1
+                    token visibility = "invisible"
+                    double3 xformOp:scale = (0.6150908957591731, 0.017499999739229662, 0.08949999866634609)
+                    double3 xformOp:translate = (0, 0.19873821171615563, 0.045224330705041844)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+            }
+        }
+    }
+
+    def "LabPhysicsMaterials"
+    {
+        def Material "plastic" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.35
+            float physics:restitution = 0
+            float physics:staticFriction = 0.4
+        }
+    }
+
+    def Xform "Bins"
+    {
+        def Xform "red"
+        {
+            double3 xformOp:translate = (-0.0483, -0.191, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "floor" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_red>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.38, 0.38, 0.010000000000000009)
+                double3 xformOp:translate = (-6.938893903907228e-18, 0, 0.0050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_red>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (-0.185, 0, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_red>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (0.185, 0, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_red>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (-6.938893903907228e-18, -0.185, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_red>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (-6.938893903907228e-18, 0.185, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "blue"
+        {
+            double3 xformOp:translate = (-0.0483, 0.209, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "floor" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_blue>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.38, 0.38, 0.010000000000000009)
+                double3 xformOp:translate = (-6.938893903907228e-18, 2.7755575615628914e-17, 0.0050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_blue>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (-0.185, 2.7755575615628914e-17, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_blue>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (0.185, 2.7755575615628914e-17, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_blue>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (-6.938893903907228e-18, -0.185, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_blue>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (-6.938893903907228e-18, 0.18500000000000003, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "yellow"
+        {
+            matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (-0.4587922617350181, -0.13275688236148475, 0.5952000000000011, 1) )
+            double3 xformOp:translate = (-0.4483, 0.009, 0.5952)
+            uniform token[] xformOpOrder = ["xformOp:transform"]
+
+            def Cube "floor" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_yellow>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.38, 0.38, 0.010000000000000009)
+                double3 xformOp:translate = (0, 8.673617379884035e-18, 0.0050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_yellow>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (-0.185, 8.673617379884035e-18, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_xp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_yellow>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.010000000000000009, 0.38, 0.09999999999999998)
+                double3 xformOp:translate = (0.185, 8.673617379884035e-18, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yn" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_yellow>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (0, -0.185, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "wall_yp" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/bin_yellow>
+                rel material:binding:physics = </World/LabPhysicsMaterials/plastic> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                double size = 1
+                double3 xformOp:scale = (0.36, 0.010000000000000009, 0.09999999999999998)
+                double3 xformOp:translate = (0, 0.185, 0.050000000000000044)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "Looks"
+    {
+        def Material "bin_red"
+        {
+            token outputs:surface.connect = </World/Looks/bin_red/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.8, 0.08, 0.06)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.6
+                token outputs:surface
+            }
+        }
+
+        def Material "bin_blue"
+        {
+            token outputs:surface.connect = </World/Looks/bin_blue/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.06, 0.22, 0.8)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.6
+                token outputs:surface
+            }
+        }
+
+        def Material "bin_yellow"
+        {
+            token outputs:surface.connect = </World/Looks/bin_yellow/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.92, 0.75, 0.05)
+                float inputs:metallic = 0
+                float inputs:roughness = 0.6
+                token outputs:surface
+            }
+        }
+    }
+
+    def RectLight "LabCellLight"
+    {
+        float inputs:height = 2
+        float inputs:intensity = 3000
+        float inputs:width = 2
+        double3 xformOp:translate = (0.15, 0.1, 2.2)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+
+over "Render"
+{
+    over "OmniverseKit"
+    {
+        over "HydraTextures"
+        {
+            over "omni_kit_widget_viewport_ViewportTexture_0"
+            {
+                rel camera = </OmniverseKit_Persp>
+                bool omni:rtx:material:db:syncLoads = 1
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 720)
+            }
+        }
+    }
+}
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (0.01, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float focalLength = 18.147562
+    float focusDistance = 400
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -4.2837868278961535)
+    float3 xformOp:rotateXYZ = (70.804276, -2.1488623e-13, -178.98486)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (-0.08768638652539112, 3.382699706054713, 1.8406497899291756)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Front" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float horizontalAperture = 33.850807
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5.000000111758711)
+    token projection = "orthographic"
+    float verticalAperture = 33.850807
+    float3 xformOp:rotateXYZ = (90, -1.2722219e-14, 90)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (5.000000111758711, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Right" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float horizontalAperture = 40.744602
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5.000000111758711)
+    token projection = "orthographic"
+    float verticalAperture = 40.744602
+    float3 xformOp:rotateXYZ = (90, -5.1684015e-15, 1.2722219e-14)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0.16187050359712246, -5.000000111758711, 0.8992805755395694)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Top" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float horizontalAperture = 50
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -5.000000111758711)
+    token projection = "orthographic"
+    float verticalAperture = 50
+    float3 xformOp:rotateXYZ = (-1.2722219e-14, -7.016709e-15, -90)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 5.000000111758711)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+

@@ -1,0 +1,29 @@
+{
+    "version": "1.0",
+    "file_records": [
+        {
+            "source_url": "C:/WSpace/takekoshi/02_Reserch/IsaacGR00T/Sim_Env/usd/NHC12_A00.usd",
+            "source_hash": "4a9a3e0578074a7a3d5c516677c50c578bdfcd32",
+            "target_url": "./NHC12_A00.usd",
+            "target_hash": "13ff34a8e8b041f064ea2fe41f7e664e1d408005"
+        },
+        {
+            "source_url": "https://omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_base.usd",
+            "source_hash": "e9ddaa4b26016e7f051b60a7d761cae9d8a03b71",
+            "target_url": "./omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_base.usd",
+            "target_hash": "b0a805d2a031885ab5784488b51e164546e856c9"
+        },
+        {
+            "source_url": "https://omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_physics.usd",
+            "source_hash": "60efaa8814838868ede5d5f651f52505c1727453",
+            "target_url": "./omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_physics.usd",
+            "target_hash": "a58a2db694057c4f7aa30c141dddf1f4fbfbd3fe"
+        },
+        {
+            "source_url": "https://omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_sensor.usd",
+            "source_hash": "c34ef5149085f40dbdd5a4f5d550ca9ffc434103",
+            "target_url": "./omniverse-content-staging.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/Robots/Yaskawa/Motoman Next/NHC12/configuration/nhc12_a00_sensor.usd",
+            "target_hash": "9dc31208183bb5d9a3b96d714754e834cfc79414"
+        }
+    ]
+}
